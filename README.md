@@ -2,10 +2,10 @@
 
 The public website for the Training Planner app: the **privacy policy** (`index.html`) and the
 **support page** (`support.html`), hosted free with GitHub Pages from the
-[training-planner-privacy](https://github.com/drew0ps/training-planner-privacy) repository.
+[Training_Planner_Privacy](https://github.com/drew0ps/Training_Planner_Privacy) repository.
 
-- Privacy policy: <https://drew0ps.github.io/training-planner-privacy/>
-- Support: <https://drew0ps.github.io/training-planner-privacy/support.html>
+- Privacy policy: <https://drew0ps.github.io/Training_Planner_Privacy/>
+- Support: <https://drew0ps.github.io/Training_Planner_Privacy/support.html>
 
 Both URLs are entered in App Store Connect (App Information › Privacy Policy URL; the support URL).
 App Review needs them, the more so because the app uses HealthKit.
