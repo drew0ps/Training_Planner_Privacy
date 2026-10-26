@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Planner - Support</title>
+<style>
+  :root {
+    --base: #1E1E2E; --card: #282839; --text: #CDD6F4; --dim: #A6ADC8;
+    --sapphire: #74C7EC; --mauve: #CBA6F7; --green: #A6E3A1;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --base: #EFF1F5; --card: #FFFFFF; --text: #4C4F69; --dim: #6C6F85;
+      --sapphire: #209FB5; --mauve: #8839EF; --green: #40A02B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px 80px;
+    background: var(--base); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header svg { width: 44px; height: 44px; flex: none; }
+  header .app { font-size: 15px; font-weight: 600; color: var(--dim); letter-spacing: 0.02em; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 12px 0 4px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; color: var(--mauve); }
+  p { margin: 0 0 14px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--sapphire); }
+  .mail {
+    display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 12px;
+    background: var(--mauve); color: #11111B; font-weight: 600; text-decoration: none;
+  }
+  nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--card); font-size: 15px; }
+  nav a + a::before { content: "·"; margin: 0 10px; color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 1024 1024" role="img" aria-label="Training Planner mark">
+      <rect x="212" y="620" width="150" height="240" rx="42" fill="#74C7EC"/>
+      <rect x="437" y="470" width="150" height="390" rx="42" fill="#CBA6F7"/>
+      <rect x="662" y="320" width="150" height="540" rx="42" fill="#A6E3A1"/>
+      <polyline points="625,260 737,160 849,260" fill="none" stroke="#A6E3A1" stroke-width="58"
+                stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="app">Training Planner</span>
+  </header>
+
+  <h1>Support</h1>
+
+  <h2>Contact</h2>
+  <p>Questions, problems or ideas about Training Planner - email and you'll hear back, usually within
+  a few days:</p>
+  <p><a class="mail" href="mailto:drewops@proton.me?subject=Training%20Planner%20support">drewops@proton.me</a></p>
+
+  <h2>Quicker answers</h2>
+  <ul>
+    <li>How the app works is explained in it: <strong>Settings &rsaquo; Guide</strong>.</li>
+    <li>What the app does with your data (nothing it shouldn't): the
+      <a href="index.html">privacy policy</a>.</li>
+    <li>Purchases: restore them in the app on Settings &rsaquo; Training Planner Pro.</li>
+  </ul>
+
+  <h2>When you write</h2>
+  <ul>
+    <li>The app version, shown at the bottom of Settings in the app.</li>
+    <li>Your device and iOS version, and what you tried and saw.</li>
+    <li>Screenshots help a lot, if it looks wrong.</li>
+  </ul>
+
+  <nav>
+    <a href="index.html">Privacy Policy</a>
+  </nav>
+</main>
+</body>
+</html>
