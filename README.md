@@ -1,18 +1,29 @@
 # Training Planner Privacy
 
-The public website for the Training Planner app: the **privacy policy** (`index.html`) and the
-**support page** (`support.html`), hosted free with GitHub Pages from the
+The first home of the Training Planner app's **privacy policy** (`index.html`) and **support
+page** (`support.html`), hosted with GitHub Pages from the
 [Training_Planner_Privacy](https://github.com/drew0ps/Training_Planner_Privacy) repository.
 
-- Privacy policy: <https://drew0ps.github.io/Training_Planner_Privacy/>
-- Support: <https://drew0ps.github.io/Training_Planner_Privacy/support.html>
+Since November 18, 2026 both pages are on the app's website, in the `training_planner_marketing`
+repository, and the two here only forward to them:
 
-Both URLs are entered in App Store Connect (App Information › Privacy Policy URL; the support URL).
-App Review needs them, the more so because the app uses HealthKit.
+| Here | Forwards to |
+| --- | --- |
+| <https://drew0ps.github.io/Training_Planner_Privacy/> | <https://trainingplanner.pro/privacy.html> |
+| <https://drew0ps.github.io/Training_Planner_Privacy/support.html> | <https://trainingplanner.pro/support.html> |
+
+GitHub Pages can't answer with a redirect, so each page sends the browser on with a `refresh`
+meta tag, names the new page as its canonical address and shows a link to it.
+
+## Why it stays
+
+The old addresses are still in use, so the repository and its Pages site have to stay:
+
+- the Mac app's Help menu opens the support page here, up to build 25;
+- App Store descriptions written before the move end with the policy's address here.
 
 ## Editing
 
-Plain static HTML, no build step: edit a page, push to `main`, and Pages republishes within a
-minute or so. The privacy policy text must stay in sync with the in-app copy at
-`Training Planner/Training Planner/Resources/PrivacyPolicy.md` - change both together, with a new
-"Effective" date when the meaning changes.
+Nothing here changes with the policy any more. Its text is in the site's `privacy.html` and in the
+app, at `Training Planner/Resources/PrivacyPolicy.md` in the app repository: change those two
+together, with a new "Effective" date when the meaning changes.

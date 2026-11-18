@@ -3,118 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#F4F5F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222831" media="(prefers-color-scheme: dark)">
 <title>TrainingPlanner - Support</title>
+<!-- The support page is on the app's website since 18 November 2026. GitHub Pages can't answer
+     with a redirect, so this page sends the browser on; the link is for a browser that doesn't
+     follow. -->
+<link rel="canonical" href="https://trainingplanner.pro/support.html">
+<meta http-equiv="refresh" content="0; url=https://trainingplanner.pro/support.html">
 <style>
-  /* Slate: the app's own look, shared with the marketing site (Branding/BRAND.md). */
   :root {
     color-scheme: light dark;
-    --bg: #F4F5F6; --bg-deep: #E3E7E8;
-    --surface: rgba(255, 255, 255, 0.72); --surface-strong: #FFFFFF;
-    --line: rgba(46, 54, 64, 0.12);
-    --text: #2E3640; --muted: #5B6570;
-    --accent: #3A7478; --accent-soft: rgba(78, 142, 146, 0.12); --on-accent: #FFFFFF;
-    --glow: rgba(78, 142, 146, 0.28);
-    --shadow: 0 18px 40px -22px rgba(46, 54, 64, 0.35);
-    --mark-grey: #8C9799; --mark-teal: #4E8E92; --mark-charcoal: #2E3640;
-    --radius: 20px;
+    --bg: #F4F5F6; --text: #2E3640; --accent: #3A7478;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #222831; --bg-deep: #1A1E24;
-      --surface: rgba(255, 255, 255, 0.05); --surface-strong: #2A3039;
-      --line: rgba(238, 238, 238, 0.12);
-      --text: #EEEEEE; --muted: #B5BCC4;
-      --accent: #76ABAE; --accent-soft: rgba(118, 171, 174, 0.16); --on-accent: #1A1E24;
-      --glow: rgba(118, 171, 174, 0.2);
-      --shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.7);
-      --mark-grey: #909D9E; --mark-teal: #76ABAE; --mark-charcoal: #EEEEEE;
-    }
+    :root { --bg: #222831; --text: #EEEEEE; --accent: #76ABAE; }
   }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0; padding: 48px 20px 80px;
-    min-height: 100vh;
-    background: var(--bg);
-    background-image:
-      radial-gradient(60rem 30rem at 85% -10%, var(--glow), transparent 70%),
-      linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
-    background-attachment: fixed;
-    color: var(--text);
+    margin: 0; padding: 48px 20px;
+    background: var(--bg); color: var(--text);
     font: 1.0625rem/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
       "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
   }
-  main {
-    max-width: 680px; margin: 0 auto; padding: 32px 28px 36px;
-    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
-  }
-  @media (max-width: 480px) {
-    body { padding: 20px 12px 56px; }
-    main { padding: 24px 18px 28px; }
-  }
-  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
-  header svg { width: 44px; height: 44px; flex: none; }
-  header .app { font-size: 0.9375rem; font-weight: 600; color: var(--muted); letter-spacing: 0.02em; }
-  h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.02em; margin: 12px 0 4px; }
-  .date { color: var(--muted); font-size: 0.9375rem; margin: 0 0 32px; }
-  h2 { font-size: 1.25rem; margin: 36px 0 8px; color: var(--accent); }
-  p { margin: 0 0 14px; }
-  li { margin: 0 0 8px; }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px; }
+  p { margin: 0; }
   a { color: var(--accent); text-underline-offset: 0.15em; }
-  a:hover { color: var(--text); }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-  .mail {
-    display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 999px;
-    background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-  }
-  .mail:hover { color: var(--on-accent); filter: brightness(1.08); }
-  nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.9375rem; }
-  nav a + a::before { content: "·"; margin: 0 10px; color: var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <svg viewBox="0 0 1024 1024" role="img" aria-label="TrainingPlanner mark">
-      <rect x="212" y="620" width="150" height="240" rx="42" fill="var(--mark-grey)"/>
-      <rect x="437" y="470" width="150" height="390" rx="42" fill="var(--mark-teal)"/>
-      <rect x="662" y="320" width="150" height="540" rx="42" fill="var(--mark-charcoal)"/>
-      <polyline points="625,260 737,160 849,260" fill="none" stroke="var(--mark-charcoal)" stroke-width="58"
-                stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span class="app">TrainingPlanner</span>
-  </header>
-
   <h1>Support</h1>
-
-  <h2>Contact</h2>
-  <p>Questions, problems or ideas about TrainingPlanner - email and you'll hear back, usually within
-  a few days:</p>
-  <p><a class="mail" href="mailto:drewops@proton.me?subject=TrainingPlanner%20support">drewops@proton.me</a></p>
-
-  <h2>Quicker answers</h2>
-  <ul>
-    <li>How the app works is explained in it: <strong>Settings &rsaquo; Guide</strong>.</li>
-    <li>What the app does with your data (nothing it shouldn't): the
-      <a href="index.html">privacy policy</a>.</li>
-    <li>Purchases: restore them in the app on Settings &rsaquo; TrainingPlanner Pro.</li>
-  </ul>
-
-  <h2>When you write</h2>
-  <ul>
-    <li>The app version, shown at the bottom of Settings in the app.</li>
-    <li>Your device and iOS version, and what you tried and saw.</li>
-    <li>Screenshots help a lot, if it looks wrong.</li>
-  </ul>
-
-  <nav>
-    <a href="index.html">Privacy Policy</a>
-  </nav>
+  <p>TrainingPlanner's support page has moved to
+    <a href="https://trainingplanner.pro/support.html">trainingplanner.pro/support.html</a>.</p>
 </main>
 </body>
 </html>

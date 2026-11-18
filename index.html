@@ -3,182 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#F4F5F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222831" media="(prefers-color-scheme: dark)">
 <title>TrainingPlanner - Privacy Policy</title>
+<!-- The policy is on the app's website since 18 November 2026. GitHub Pages can't answer with a
+     redirect, so this page sends the browser on; the link is for a browser that doesn't follow. -->
+<link rel="canonical" href="https://trainingplanner.pro/privacy.html">
+<meta http-equiv="refresh" content="0; url=https://trainingplanner.pro/privacy.html">
 <style>
-  /* Slate: the app's own look, shared with the marketing site (Branding/BRAND.md). */
   :root {
     color-scheme: light dark;
-    --bg: #F4F5F6; --bg-deep: #E3E7E8;
-    --surface: rgba(255, 255, 255, 0.72); --surface-strong: #FFFFFF;
-    --line: rgba(46, 54, 64, 0.12);
-    --text: #2E3640; --muted: #5B6570;
-    --accent: #3A7478; --accent-soft: rgba(78, 142, 146, 0.12); --on-accent: #FFFFFF;
-    --glow: rgba(78, 142, 146, 0.28);
-    --shadow: 0 18px 40px -22px rgba(46, 54, 64, 0.35);
-    --mark-grey: #8C9799; --mark-teal: #4E8E92; --mark-charcoal: #2E3640;
-    --radius: 20px;
+    --bg: #F4F5F6; --text: #2E3640; --accent: #3A7478;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #222831; --bg-deep: #1A1E24;
-      --surface: rgba(255, 255, 255, 0.05); --surface-strong: #2A3039;
-      --line: rgba(238, 238, 238, 0.12);
-      --text: #EEEEEE; --muted: #B5BCC4;
-      --accent: #76ABAE; --accent-soft: rgba(118, 171, 174, 0.16); --on-accent: #1A1E24;
-      --glow: rgba(118, 171, 174, 0.2);
-      --shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.7);
-      --mark-grey: #909D9E; --mark-teal: #76ABAE; --mark-charcoal: #EEEEEE;
-    }
+    :root { --bg: #222831; --text: #EEEEEE; --accent: #76ABAE; }
   }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0; padding: 48px 20px 80px;
-    min-height: 100vh;
-    background: var(--bg);
-    background-image:
-      radial-gradient(60rem 30rem at 85% -10%, var(--glow), transparent 70%),
-      linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
-    background-attachment: fixed;
-    color: var(--text);
+    margin: 0; padding: 48px 20px;
+    background: var(--bg); color: var(--text);
     font: 1.0625rem/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
       "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
   }
-  main {
-    max-width: 680px; margin: 0 auto; padding: 32px 28px 36px;
-    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
-  }
-  @media (max-width: 480px) {
-    body { padding: 20px 12px 56px; }
-    main { padding: 24px 18px 28px; }
-  }
-  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
-  header svg { width: 44px; height: 44px; flex: none; }
-  header .app { font-size: 0.9375rem; font-weight: 600; color: var(--muted); letter-spacing: 0.02em; }
-  h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.02em; margin: 12px 0 4px; }
-  .date { color: var(--muted); font-size: 0.9375rem; margin: 0 0 32px; }
-  h2 { font-size: 1.25rem; margin: 36px 0 8px; color: var(--accent); }
-  p { margin: 0 0 14px; }
-  li { margin: 0 0 8px; }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px; }
+  p { margin: 0; }
   a { color: var(--accent); text-underline-offset: 0.15em; }
-  a:hover { color: var(--text); }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-  .mail {
-    display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 999px;
-    background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
-  }
-  .mail:hover { color: var(--on-accent); filter: brightness(1.08); }
-  nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.9375rem; }
-  nav a + a::before { content: "·"; margin: 0 10px; color: var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <svg viewBox="0 0 1024 1024" role="img" aria-label="TrainingPlanner mark">
-      <rect x="212" y="620" width="150" height="240" rx="42" fill="var(--mark-grey)"/>
-      <rect x="437" y="470" width="150" height="390" rx="42" fill="var(--mark-teal)"/>
-      <rect x="662" y="320" width="150" height="540" rx="42" fill="var(--mark-charcoal)"/>
-      <polyline points="625,260 737,160 849,260" fill="none" stroke="var(--mark-charcoal)" stroke-width="58"
-                stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span class="app">TrainingPlanner</span>
-  </header>
-
   <h1>Privacy Policy</h1>
-  <p class="date">Effective 17 November 2026</p>
-
-  <h2>The short version</h2>
-  <p>TrainingPlanner doesn't collect your data. Your training stays on your devices and in your own
-  iCloud account. There are no accounts, no ads, no analytics and no tracking, and the app contains no
-  third-party code that collects data.</p>
-
-  <h2>What the app stores</h2>
-  <p>The app stores your programs, workout logs, program summaries, body entries (body weight, body fat
-  and measurements), progress photos and settings, and, if you're a trainer, the reports your clients
-  send you and the programs you prepare for them. They are kept on your device and, when you're signed
-  in to iCloud, in your private iCloud database, so they stay in sync on your devices. Only you can see
-  your private iCloud data: the developer has no access to it. Apple stores it under the Apple Media
-  Services and iCloud terms and Apple's privacy policy.</p>
-  <p>You can back up everything the app stores to one file from Settings &rsaquo; Backup, keep it wherever
-  you like and restore it on any device; the file goes only where you send it. You can delete your data at
-  any time by deleting programs in the app, by deleting the app, or under Settings &rsaquo; your name
-  &rsaquo; iCloud &rsaquo; Manage Storage &rsaquo; TrainingPlanner.</p>
-
-  <h2>Apple Health</h2>
-  <p>Only if you turn it on, the app saves each finished workout to Apple Health as strength training:
-  its start and end time, the session name, the number of sets, the total reps, the training volume
-  and the average effort (RPE). It also saves the body weight, body fat percentage and waist
-  measurement of the body entries you log; progress photos and other measurements are never saved to
-  Apple Health. With saving on, the app reads one thing back: the average heart rate
-  and active energy of a workout your Apple Watch recorded with TrainingPlanner, to show them with
-  that workout. It reads nothing else from Apple Health unless you turn on readiness or nutrition.</p>
-  <p>Only if you turn on readiness, the app reads your heart rate variability, resting heart rate and
-  sleep from the last five weeks to estimate how ready you are to train, and the workouts other apps
-  saved, with their length and average heart rate, to count in your training load. What's read is
-  worked out on your device and kept there, for the app and its widget; it isn't synced to iCloud.
-  Turning readiness off forgets it.</p>
-  <p>Only if you turn on nutrition, the app reads the calories, protein, carbohydrates and fat that a
-  food tracker saved to Apple Health for the last ten days, to show what you ate on Today beside your
-  training. The app logs no food itself. What's read is kept on your device; it isn't synced to iCloud,
-  and it isn't part of a backup file or a report for your trainer. Turning nutrition off forgets it.</p>
-  <p>When you start a workout on your Apple Watch, the watch records it as a strength training workout
-  and saves it to Apple Health when it ends, so it counts toward your Activity rings. While it's on,
-  the watch reads your heart rate and the active energy you burn to show them, on the watch and,
-  while your iPhone is in reach with the workout on its screen, there too; the iPhone shows them and
-  doesn't keep them. When the workout ends, the watch sends its average heart rate and active energy
-  to the app on your iPhone, which keeps them on the iPhone to show with that workout. On another
-  device, such as an iPad, the app reads the two numbers from the workout in Apple Health instead,
-  when saving to Apple Health is on there. Either way they stay on the device: the app doesn't sync
-  them to iCloud, and they aren't part of a backup file or a report for your trainer. The watch
-  records only the workouts you start on it.</p>
-  <p>Health data is never used for advertising or marketing, never sold, and never shared with anyone;
-  it isn't sent to the developer. You can turn saving off in the app's Settings, and change what the
-  app may read and save in the Health app.</p>
-
-  <h2>Exercise videos</h2>
-  <p>The app has no videos of its own. When you tap Watch a demo, it opens YouTube's search for the
-  exercise in your browser or the YouTube app; YouTube handles that search under its own privacy
-  policy. Nothing is sent until you tap it.</p>
-
-  <h2>Apple Intelligence</h2>
-  <p>Designing programs and coaching use Apple Intelligence on your device. Your training data is
-  processed on the device and isn't sent to the developer or to third parties.</p>
-
-  <h2>Purchases</h2>
-  <p>Subscriptions and purchases are handled by Apple. The developer doesn't receive your payment
-  details or Apple Account information; the app only checks with the App Store on your device whether
-  you have TrainingPlanner Pro.</p>
-
-  <h2>Working with a trainer</h2>
-  <p>Only when you choose to, the app makes a report file of your name, programs, workout logs for the
-  period you pick, and program summaries, for you to send to your trainer with AirDrop, Messages, Mail
-  or another app. A trainer sends programs back the same way. These files go only to the people you
-  send them to, through the app you choose, which handles them under its own privacy policy; nothing
-  goes through the developer. A trainer keeps their clients' reports on their device and in their
-  private iCloud, and a client's changes from a trainer are only taken when the client accepts
-  them.</p>
-  <p>If you're a trainer, your clients' reports contain their training data: keep them only as long as
-  you work together, and remove a client in the app when you stop.</p>
-
-  <h2>Children</h2>
-  <p>TrainingPlanner isn't directed at children under 13.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, the new version will be in the app and on this page, with a new effective
-  date.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about privacy: <a href="mailto:drewops@proton.me">drewops@proton.me</a></p>
-
-  <nav>
-    <a href="support.html">Support</a><a href="https://github.com/drew0ps/Training_Planner_Privacy">Source</a>
-  </nav>
+  <p>TrainingPlanner's privacy policy has moved to
+    <a href="https://trainingplanner.pro/privacy.html">trainingplanner.pro/privacy.html</a>.</p>
 </main>
 </body>
 </html>
